@@ -23,6 +23,10 @@ WmicWrapper - It's simple wrapper for wmic command
 
 WmicWrapper is simple wrapper for wmic command
 
+# INSTALLATION
+
+    cpanm https://github.com/yasu47b/perl-WmicWrapper/archive/master.tar.gz
+
 # LICENSE
 
 Copyright (C) yasu47b.
