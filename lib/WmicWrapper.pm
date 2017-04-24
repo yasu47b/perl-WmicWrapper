@@ -27,7 +27,7 @@ sub execute {
     my $password = $self->{password};
     my $host = $self->{host};
     my $command = "wmic -U $domain/$user%$password //$host ".'"'.$wql.'"';
-    $command = $command.' --delimiter='.$self->{delimiter};
+    $command .= ' --delimiter='.$self->{delimiter} if $self->{delimiter};
     return `$command`;
 }
 
